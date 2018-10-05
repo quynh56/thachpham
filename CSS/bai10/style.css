@@ -1,0 +1,13 @@
+div{
+    background:yellow;
+    height:25%;
+    width:1000px;
+    max-width:500px;
+}
+h1{
+    background:brown;
+    width:300px;
+    min-width:500px;
+    min-height:300px;
+    height:100px
+}

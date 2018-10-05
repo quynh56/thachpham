@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+    -maz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+}
+div{
+    width:500px;
+    height:500px;
+    padding:500px;
+    background-color:blue;
+    border: 5px solid black;
+    box-sizing: content-box;
+
+}

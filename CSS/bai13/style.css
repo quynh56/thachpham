@@ -1,0 +1,22 @@
+.container{
+    width:960px;
+    height:400px;
+    margin:0 auto;
+    border: 1px solid black;
+    padding:2em;
+}
+#content{
+    overflow:auto;
+}
+#post{
+    background-color:blue;
+    width:560px;
+    height:300px;
+    float:left;
+}
+#silebar{
+    background-color:brown;
+    width: 400px;
+    float:right;
+    height:300px;
+}
