@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>transform</title>
+    <style tyep="text/css">
+        #box{
+            width: 200px;
+            height: 200px;
+            background: red;
+            transition: all 1s 0.2s ;
+            -moz-transition: all 1s 0.2s ;
+            -webkit-transition: all 1s 0.2s;
+        }
+        img{
+            width: 200px;
+            height: 200px;
+            background: red;
+            transition: all 1s 0.2s ;
+            -moz-transition: all 1s 0.2s ;
+            -webkit-transition: all 1s 0.2s;
+        }
+        img:hover{
+           /* transform: skewy(20deg);*/
+            transform: scale(3);
+           /* <!-- hàm skew: bị nghiêng đi
+            scale: thu nhỏ phongs to lên
+            rotate: xoay phần tử
+            translate: dịch chuyển vị trí phần tử*/
+        }
+        #box:hover{
+           /* transform: rotate(10turn);}*/
+           /* transform: translate(35px, 50%);*/
+            transform: skew(90deg);
+            transform-origin: -100% -200%;
+        }
+    </style>
+</head>
+<body>
+<div id="box"></div>
+<br>
+<img src="images.jpg" >
+</body>
+</html>

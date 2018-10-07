@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>display</title>
+    <style type="text/css">
+        .inline{
+            background-color:#e8e8e8;
+            border: 1px solid red;
+            display:inline;
+        }
+        .block{
+        background:lightskyblue;
+        display:block;
+        }
+      /*  .list div{
+            list-style-type:decimal;
+            margin-left: 32px;
+            display: list-item;
+        }*/
+        .container {
+            width: 60%;
+            margin: 0 auto;
+            display: table;
+        }
+        .row {
+            display: table-row;
+        }
+        .col{
+        display:table-cell;
+       background:red;
+            border: 1px solid;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="inline"> bài 1</div>
+<div class="inline"> bài 2</div>
+<span class="block">inline 1</span>
+<span class="block">inline 2</span>
+<div class="container">
+    <div class="row">
+    <div class="col">Item 1</div>
+    <div class="col">Item 2</div>
+    <div class="col">Item 3</div>
+    </div>
+    <div class="row">
+        <div class="col">Item 1</div>
+        <div class="col">Item 2</div>
+        <div class="col">Item 3</div>
+    </div>
+</div>
+</body>
+</html>
