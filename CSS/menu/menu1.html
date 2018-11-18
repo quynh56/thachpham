@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>menu</title>
+    <style type="text/css">
+
+        ul{
+            background-color: darkorange;
+            position: relative;
+            display: inline-block;
+            list-style-type:none;
+            padding:0;
+            margin:0;
+            font-size: 30px;
+
+        }
+        ul li{
+            float: left;
+            text-indent: 50px;
+            display: block;
+            transition-duration: 0.5s;
+        }
+        ul li a{
+
+            color:white;
+            text-decoration: none;
+
+        }
+        .dropdown{
+
+            display:none;
+            position:absolute;
+            list-style-type:none;
+            background: darkorange;
+            width: 200px;
+
+        }
+
+
+        .dropdown a{
+            text-align: center;
+            color: white;
+            text-decoration: none;
+            padding: 12px 16px;
+
+
+
+        }
+        .dropdown-sub{
+            display: none;
+            list-style:none;
+            position: relative;
+            background:darkorange;
+           float:right;
+            left: 200px;
+
+
+
+        }
+
+
+        ul li:hover{
+            background: red;
+            cursor: pointer;
+        }
+        ul li:hover > ul,
+        ul li ul:hover{
+
+            opacity: 1;
+            display: block;
+            cursor:pointer;
+        }
+        .dropdown:hover > ul,
+        .dropdown ul:hover{
+            opacity: 1;
+            display: block;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+<div>
+    <ul>
+        <li><a href="#">One</a>
+            <ul class="dropdown">
+                <li><a href="#">sub-1</a></li>
+                <li><a href="#">sub-2</a></li>
+                <li><a href="#">sub-3</a></li>
+            </ul></li>
+        <li><a href="#">Two</a>
+        <ul class="dropdown">
+            <li><a href="#">sub-1</a></li>
+            <li><a href="#">sub-2</a></li>
+            <li><a href="#">sub-3</a></li>
+        </ul>
+        </li>
+        <li><a href="#">Three</a>
+            <ul class="dropdown">
+                <li><a href="#">sub-1</a></li>
+                <li><a href="#">sub-2</a>
+                    <ul class="dropdown-sub">
+                        <li><a href="#">sub-2.a</a></li>
+                        <li><a href="#">sub-2.b</a></li>
+                        <li><a href="#">sub-2.c</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">sub-3</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

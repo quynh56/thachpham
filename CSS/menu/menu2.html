@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>menu</title>
+    <style type="text/css">
+
+        a{
+            text-decoration: none;
+        }
+        ul{
+            position: relative;
+            display: inline-block;
+            margin:0;
+            padding:0;
+            background: white;
+            list-style: none;
+        }
+       ul li{
+           text-indent: 20px;
+            float:left;
+           transition-duration: 0.5s;
+        }
+        .box1{
+            color: dodgerblue;
+        }
+
+        .box2{
+            color:green;
+        }
+        .box3{
+            color: darkorange;
+        }
+        .box4{
+            color:hotpink;
+        }
+      .dropdown{
+            position:absolute;
+            display:none;
+          width: 200px;
+          background-color: white;
+          line-height:30px;
+
+
+        }
+         .dropdown a{
+            color:black;
+             padding: 12px 16px;
+             border-bottom: 1px solid gray;
+
+        }
+      .dropdown a:hover{
+            color:dodgerblue;
+        }
+        ul li:hover > ul,
+        ul li ul:hover{
+            display: block;
+            opacity:1;
+            cursor:pointer;
+        }
+
+    </style>
+</head>
+<body>
+<div>
+    <ul>
+        <li><a href="#" class="box1">Thời sự</a>
+            <ul class="dropdown">
+                <li><a href="#">Giao thông</a></li>
+                <li><a href="#">Đô thị </a></li>
+                <li><a href="#">Đời sống</a></li>
+                <li><a href="#">Quốc phòng</a></li>
+                <li><a href="#">Ảnh & video</a></li>
+            </ul>
+        </li>
+        <li><a href="#" class="box1">Thế giới</a>
+            <ul class="dropdown">
+                <li><a href="#">Ảnh & video</a></li>
+                <li><a href="#">Quân sự</a></li>
+                <li><a href="#">Tư liệu</a></li>
+                <li><a href="#">Phân tích</a></li>
+                <li><a href="#">Người Việt 4 phương</a></li>
+            </ul>
+        </li>
+        <li><a href="#" class="box1">Kinh doanh</a>
+            <ul class="dropdown">
+                <li><a href="#">Tài chính</a></li>
+                <li><a href="#">Chứng khoán</a></li>
+                <li><a href="#">Bất động sản</a></li>
+                <li><a href="#">Doanh nhân</a></li>
+            </ul>
+        </li>
+        <li><a href="#" class="box1">Pháp luật</a>
+            <ul class="dropdown">
+                <li><a href="#">Pháp đỉnh</a></li>
+                <li><a href="#">Vụ án</a></li>
+
+            </ul>
+        </li>
+        <li><a href="#" class="box2">Xuất bản</a>
+            <ul class="dropdown">
+                <li><a href="#">Tin tức xuất bản</a></li>
+                <li><a href="#">Sách hay</a></li>
+                <li><a href="#">Tác giả</a></li>
+            </ul>
+        </li>
+        <li><a href="#" class="box2">Thể thao</a>
+            <ul class="dropdown">
+                <li><a href="#">Thể thao Việt Nam</a></li>
+                <li><a href="#">Cup Châu Âu</a></li>
+                <li><a href="#">Bóng đá Anh</a></li>
+                <li><a href="#">Bóng đá Việt Nam</a></li>
+                <li><a href="#">Hậu trường thể thao</a></li>
+                <li><a href="#">Sống cùng World Cup</a></li>
+            </ul>
+        </li>
+        <li><a href="#" class="box2">Công nghệ</a>
+            <ul class="dropdown">
+                <li><a href="#">Điện thoại</a></li>
+                <li><a href="#">Máy tính bảng</a></li>
+                <li><a href="#">Ứng dụng di động</a></li>
+            </ul>
+        </li>
+        <li><a href="#" class="box2">Xe 360</a>
+            <ul class="dropdown">
+               <li><a href="#">Xe máy</a></li>
+                <br>
+                <li><a href="#">Ô-tô</a></li>
+                <br>
+                <li><a href="#">Xe độ</a></li>
+                <br>
+                <li><a href="#">Siêu xe</a></li>
+
+            </ul>
+        </li>
+        <li><a href="#" class="box3">Giải trí</a>
+            <ul class="dropdown">
+                <li><a href="#">Sao Việt</a></li>
+                <li><a href="#">Sao Châu Á</a></li>
+                <li><a href="#">Sao Hollywood</a></li>
+            </ul>
+        </li>
+        <li><a href="#" class="box3">Âm nhạc</a>
+            <ul class="dropdown">
+                <li><a href="#">Nhạc Việt</a></li>
+                <li><a href="#">Nhạc Hàn</a></li>
+                <li><a href="#">Nhạc Âu Mỹ</a></li>
+                <li><a href="#">#ZingChart</a></li>
+            </ul>
+        </li>
+        <li><a href="#" class="box3">Phim ảnh</a>
+            <ul class="dropdown">
+                <li><a href="#">Phim chiếu rạp</a></li>
+                <li><a href="#">Phim truyền hình</a></li>
+                <li><a href="#">Game Show</a></li>
+            </ul>
+        </li>
+        <li><a href="#" class="box3">Thời trang</a>
+            <ul class="dropdown">
+                <li><a href="#">Thời trang Sao</a></li>
+                <li><a href="#">Mặc đẹp</a></li>
+                <li><a href="#">Làm đẹp</a></li>
+            </ul>
+        </li>
+        <li><a href="#" class="box4">Sống trẻ </a>
+            <ul class="dropdown">
+                <li><a href="#">Gương mặt trẻ</a></li>
+                <li><a href="#">Cộng đồng mạng</a></li>
+                <li><a href="#">Sự kiện</a></li>
+            </ul>
+        </li>
+        <li><a href="#" class="box4">Giáo dục</a>
+            <ul class="dropdown">
+                <li><a href="#">Tuyển sinh 2018</a></li>
+                <br>
+                <li><a href="#">Tư vấn</a></li>
+                <br>
+                <li><a href="#">Du học</a></li>
+                <br>
+                <li><a href="#">Học Tiếng Anh</a></li>
+            </ul>
+        </li>
+        <li><a href="#" class="box4">Sức khỏe</a>
+            <ul class="dropdown">
+                <li><a href="#">Khỏe đẹp</a></li>
+                <li><a href="#">Dinh dưỡng</a></li>
+                <li><a href="#">Mẹ và bé</a></li>
+                <li><a href="#">Bệnh thường gặp</a></li>
+            </ul>
+        </li>
+        <li><a href="#" class="box4">Du lịch</a>
+            <ul class="dropdown">
+                <li><a href="#">Địa điểm du lịch</a></li>
+                <li><a href="#">Kinh nghiệm du lịch</a></li>
+                <li><a href="#">Phượt</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
